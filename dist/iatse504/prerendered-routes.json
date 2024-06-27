@@ -1,0 +1,12 @@
+{
+  "routes": [
+    "/",
+    "/contact",
+    "/dashboard",
+    "/home",
+    "/login",
+    "/password-reset",
+    "/register",
+    "/store"
+  ]
+}
