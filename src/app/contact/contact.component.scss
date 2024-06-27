@@ -1,0 +1,27 @@
+input {
+    color: black;
+}
+
+@media (max-width: 767px) {
+    iframe {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    iframe {
+        width: 275px;
+    }
+}
+
+@media (min-width: 1200px) {
+    iframe {
+        width: 330px;
+    }
+}
+
+@media (min-width: 1400px) {
+    iframe {
+        width: 375px;
+    }
+}

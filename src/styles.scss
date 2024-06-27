@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+// Custom Scss overrides for Bootstrap
+$primary: #2E3E80;
+$secondary: #DDCBA4;
+$success: #64A70B;
+$info: #8C489A;
+$warning: #FF9E1B;
+$danger: #AF231C;
+$light: #FCFCFC;
+$dark: #101820;
+
+//Navbar padding and margin adjust
+$navbar-brand-padding-y: 0;
+$navbar-brand-margin-end: 0;
+
+// import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Form styling
+.input-line {
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border-bottom: 2px solid #7BA4DB;
+    }
+  }
+
+// Button styling
+.submit {
+    border: none;
+
+    &:hover {
+      background-color: #A7C186;
+      border: none;
+      transition: 0.4s;
+    }
+  }

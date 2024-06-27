@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="container-lg text-primary text-center mt-5">
+        <h2>Login</h2>
+    </div>
+    <div class="row justify-content-center my-5">
+        <div class="col-lg-6">
+            <form action="#" class="">
+
+                <div class="row m-auto">
+
+                    <!-- Display for medium screens and up -->
+                    <div class="d-none d-md-block col-12 col-md-8 offset-md-2" id="md-plus-inputs">
+                        <div class="mb-4">
+                            <label for="Username" class="form-label">Username</label>
+                            <input type="text" class="form-control input-line" id="username">
+                        </div>
+
+                        <div class="">
+                            <label for="Password" class="form-label">Password</label>
+                            <input type="text" class="form-control input-line" id="password">
+                        </div>
+                    </div>
+                    <!-- Display for small screens -->
+                    <div class="container-fluid" id="sm-inputs">
+                        <div class="d-block d-md-none mb-4">
+                            <label for="Username" class="form-label">Username</label>
+                            <input type="text" class="form-control input-line" id="username">
+                        </div>
+
+                        <div class="d-block d-md-none">
+                            <label for="Password" class="form-label">Password</label>
+                            <input type="text" class="form-control input-line" id="password">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 offset-md-3 my-4 text-center">
+                        <button type="submit" class="btn btn-primary my-4 px-5 submit" id="login">Login</button>
+                        <br />
+                        <a href="/password-reset" id="pw-link">Forgot password</a>
+                        <br />
+                        <a href="/register" id="create-account">Create an account</a>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>
