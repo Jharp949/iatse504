@@ -7,7 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:iatse504": "node dist/iatse504/server/server.mjs"
+    "serve:ssr:iatse504": "node dist/iatse504/server/server.mjs",
+    "build:ssr": "ng build && ng run iatse504:server",
+    "serve:ssr": "node dist/iatse504/server/main.js"
   },
   "private": true,
   "dependencies": {
