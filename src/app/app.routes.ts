@@ -8,6 +8,10 @@ import { LoginComponent } from './auth/login/login.component';
 import { DashboardComponent } from './auth/dashboard/dashboard.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { ForgotPwComponent } from './auth/forgot-pw/forgot-pw.component';
+import { MembersComponent } from './auth/members/members.component';
+
+//Authguard
+import { authGuard } from './auth/auth.guard';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -18,6 +22,9 @@ export const routes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
     { path: 'password-reset', component: ForgotPwComponent },
+
+    // protected
+    { path: 'members', component: MembersComponent, canActivate: [authGuard]},
 
 
     // otherwise redirect to home
