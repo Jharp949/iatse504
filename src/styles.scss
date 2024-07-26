@@ -8,9 +8,13 @@ $danger: #AF231C;
 $light: #FCFCFC;
 $dark: #101820;
 
-//Navbar padding and margin adjust
+// Navbar padding and margin adjust
 $navbar-brand-padding-y: 0;
 $navbar-brand-margin-end: 0;
+
+// Carousel indicator variables
+$carousel-indicator-width: 10px;
+$carousel-indicator-height: 10px;
 
 // import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
@@ -38,3 +42,12 @@ $navbar-brand-margin-end: 0;
       transition: 0.4s;
     }
   }
+
+// Carousel indicator styling
+.carousel-indicators button{
+  border-radius: 100% !important;
+
+  &.active {
+    background-color: #FF9E1B !important;
+  }
+}
