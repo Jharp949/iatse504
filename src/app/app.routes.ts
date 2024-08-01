@@ -5,8 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { StoreComponent } from './store/store.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './auth/login/login.component';
-import { RegisterComponent } from './auth/register/register.component';
-import { ForgotPwComponent } from './auth/forgot-pw/forgot-pw.component';
+import { RegisterComponent } from './register/register.component';
+import { ForgotPwComponent } from './forgot-pw/forgot-pw.component';
 import { MembersComponent } from './auth/members/members.component';
 
 //Authguard

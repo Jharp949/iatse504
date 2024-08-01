@@ -39,43 +39,44 @@
             </div>
         </div>
 
-        <div class="col-md-7 bg-primary text-light">
+        <div class="col-md-8 text-dark">
             <form action="#" class="contact-form" id="contact">
 
                 <div class="pt-2 pb-4 ps-1" id="message-header">
                     <h5>Send us a message</h5>
                 </div>
 
-                <div class="d-lg-flex justify-content-around" id="first-last">
+                <div class="d-md-flex justify-content-around" id="first-last">
 
-                    <div class="form-group">
+                    <div class="form-group">     
                         <label for="first-name" class="form-label">First Name *</label>
-                        <input type="firstName" class="form-control" id="first-name">
+                        <input type="firstName" class="form-control input-line" id="first-name">
                     </div>
 
                     <div class="form-group">
                         <label for="last-name" class="form-label">Last Name *</label>
-                        <input type="lastName" class="form-control" id="last-name">
+                        <input type="lastName" class="form-control input-line" id="last-name">
                     </div>
 
                 </div>
 
-                <div class="d-lg-flex justify-content-around" id="num-email">
+                <div class="d-md-flex justify-content-around" id="num-email">
 
                     <div class="form-group">
                         <label for="phone" class="form-label">Phone Number *</label>
-                        <input type="phone" class="form-control" id="phone">
+                        <input type="phone" class="form-control input-line" id="phone">
                     </div>
 
                     <div class="form-group">
                         <label for="email" class="form-label">Email *</label>
-                        <input type="text" class="form-control" id="email">
+                        <input type="text" class="form-control input-line" id="email">
                     </div>
 
                 </div>
 
-                <div class="px-2 pt-5 pb-3" id="message">
-                    <textarea class="form-control" id="message-text" rows="10"></textarea>
+                <div class="text-container px-2 pt-5 pb-3" id="message">
+                    <label for="message-text" class="form-label">Message *</label>
+                    <textarea class="form-control contact-text mt-2" id="message-text" rows="10"></textarea>
                 </div>
 
                 <div class="text-end mb-3 me-2" id="btn-container">
