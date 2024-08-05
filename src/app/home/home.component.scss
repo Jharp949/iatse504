@@ -5,3 +5,16 @@
 #ia-inter {
     border-radius: 50%;
 }
+
+/* Ensure the carousel takes up the full viewport width on small screens */
+@media (max-width: 576px) {
+    #carouselFadeIndicators {
+      width: 100vw;
+      margin-left: calc(-50vw + 50%);
+    }
+  
+    .carousel-item img {
+      width: 100vw;
+      height: 100vw;
+    }
+  }

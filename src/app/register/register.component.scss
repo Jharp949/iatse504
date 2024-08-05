@@ -5,3 +5,11 @@ a {
 .form-header {
     max-width: 90%;
 }
+
+/* Custom width for large screens and above */
+@media (min-width: 992px) {
+
+    .header-p {
+        max-width: 70%; /* Custom width for large screens */
+    }
+}
