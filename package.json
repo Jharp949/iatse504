@@ -1,6 +1,7 @@
 {
   "name": "iatse504",
   "version": "1.6.0",
+  "type": "module",
   "scripts": {
     "ng": "ng",
     "dev": "ng serve",
