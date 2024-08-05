@@ -1,8 +1,9 @@
 
 require('dotenv').config();
-const nodemailer = require('nodemailer');
-const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
+import nodemailer from 'nodemailer';
+import jwt from 'jsonwebtoken';
+import bcrypt from 'bcrypt';
+
 const saltRounds = 10;
 
 const User = require('../models/User');

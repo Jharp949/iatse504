@@ -1,7 +1,7 @@
-const express = require('express');
-const fileControllers = require('../controllers/uploadControllers');
+import express from 'express';
+import fileControllers from '../controllers/uploadControllers';
+import multer from 'multer';
 
-multer = require('multer');
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, './src/assets/uploads');
