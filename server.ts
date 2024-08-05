@@ -5,6 +5,8 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 import bootstrap from './src/main.server';
 
+require('dotenv').config();
+
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
@@ -19,6 +21,12 @@ export function app(): express.Express {
 
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
+  // Redirect requests for User related routes
+  server.get('/api/user', require('./server/routes/userRoutes'));
+
+  // Redirect requests for file upload related routes
+  server.get('/api/file', require('./server/routes/uploadRoutes'));
+  
   // Serve static files from /browser
   server.get('**', express.static(browserDistFolder, {
     maxAge: '1y',
